@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="711.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="ch.supsi.gui.FXMLController">
+    <children>
+        <ImageView fx:id="imageViewPartenza" fitHeight="80.0" fitWidth="40" preserveRatio="false" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="-15.0" rotate="90" >
+            <Image url="/Partenza.png" />
+        </ImageView>
+        <ImageView fx:id="imageViewArrivo" fitHeight="40.0" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0" rotate="0" >
+            <Image url="/Arrivo.png" />
+        </ImageView>
+        <ImageView fx:id="imageViewTreno" fitHeight="55.0" preserveRatio="true" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="120.0" rotate="0" >
+            <Image url="/Treno.png" />
+        </ImageView>
+        <ImageView fx:id="imageViewOmino" fitHeight="55.0" preserveRatio="true" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="120.0" rotate="0" >
+            <Image url="/Omino.png" />
+        </ImageView>
+        <ImageView fx:id="imageViewAuto" fitWidth="70" preserveRatio="true" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="125.0" rotate="0" >
+            <Image url="/car.png" />
+        </ImageView>
+        <ImageView fx:id="imageViewBlaBla" fitWidth="70" preserveRatio="true" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="145.0" rotate="0" >
+            <Image url="/BlaBlaCar.png" />
+        </ImageView>
+        <GoogleMapView fx:id="mapView" layoutX="-311.0" layoutY="-244.0" prefWidth="490.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <!-- <Label fx:id="fromLabel" prefHeight="27.0" prefWidth="222.0" text="Partenza" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" /> -->
+        <!--<Label fx:id="toLabel" prefHeight="27.0" prefWidth="222.0" text="Arrivo" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />-->
+        <TextField fx:id="fromTextField" prefHeight="27.0" prefWidth="222.0" promptText="From:" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="10.0" />
+        <TextField fx:id="toTextField" layoutX="10.0" layoutY="10.0" onAction="#toTextFieldAction" prefHeight="27.0" prefWidth="222.0" promptText="To:" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="70.0" />
+        <!--RadioButtons-->
+        <CheckBox fx:id="check_1" selected="false" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0"/>
+        <CheckBox fx:id="check_2" selected="false" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="140.0"/>
+        <CheckBox fx:id="check_3" selected="false" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="140.0"/>
+        <CheckBox fx:id="check_4" selected="false" AnchorPane.leftAnchor="305.0" AnchorPane.topAnchor="140.0"/>
+        <TextArea fx:id="TextAreax" prefWidth="350" prefHeight="330" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="200.0"></TextArea>
+    </children>
+</AnchorPane>
